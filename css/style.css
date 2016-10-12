@@ -1,0 +1,254 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: rgb(200,240,200);
+	text-align: center;
+	border-bottom: 1px solid black;
+	position: fixed;
+	width: 100%;
+}
+
+header h1 {
+	font-weight: 300;
+	font-size: 6.5rem;
+	margin: 0;
+}
+
+nav {
+	border-bottom: 1px solid black;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	margin-top: 128px;
+}
+
+nav ul {
+	list-style-type: none;
+	background-color: gray;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0.25rem;
+	background-color: white;
+}
+
+nav a {
+	display: block;
+	padding: 1rem 3rem;
+	color: black;
+}
+nav a:hover {
+	background-color: rgb(240,150,80);
+}
+
+main {
+	margin-right: 6%;
+	width: 88%;
+	margin-top: 168px;
+	width: 100%;
+	display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+	main {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	main {
+		width: 95%;
+	}
+}
+
+footer {
+	background-color: #C8F0C8;
+	text-align: center;
+	border-top: 1px solid #000;
+	padding: 20px 34%;
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+
+
+
+
+a {
+	text-decoration: none;
+	color: rgb(240,150,80);
+}
+a:hover {
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.message {
+	margin: 2rem auto 0;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-top: 20rem;
+  margin-bottom: -15rem;
+  width: 50%;
+  text-align: center;
+}
+
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
+
+.text-center {
+	text-align: center;
+	width: 100%;
+ }
+.text-right { text-align: right; }
+
+.text-small { font-size: 0.75em; }
+.text-xsmall { font-size: 0.5em; }
+
+.subtitle {
+	display: block;
+	font-size: 90%;
+	font-weight: 300;
+	margin-left: 1rem;
+}
+
+.cal th {
+	height: 4rem;
+	width: 11rem;
+
+}
+
+form {
+	/*width: 50%;*/
+	margin: 2rem auto;
+	padding: 2rem;
+	border: 1px solid black;
+	width: 70%;
+	border-color: #C8F0C8;
+	background-color: white;
+}
+form.noborder {
+	border: none;
+}
+.create {
+	background-color: gainsboro;
+	width: 100%;
+	margin-bottom: 10rem;
+	height: 100%
+}
+.formline {
+	display: flex;
+}
+.formline:not(:last-child) {
+	margin-bottom: 1rem;
+}
+.formline label {
+	flex: 1;
+	text-align: right;
+	padding-right: 1rem;
+}
+.formline input {
+	flex: 3;
+}
+.formline textarea {
+	flex: 3;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+}
+
+ul.squarelist {
+	display: flex;
+	flex-direction: line;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+}
+ul.squarelist li {
+	flex: 0 1 20rem;
+	padding: 0 1rem;
+	margin: 1rem;
+	border: 1px solid black;
+}
+
+main li{
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 8rem;
+}
+
+.myCal {
+	width: 17%;
+	flex-direction: column;
+	display: flex;
+	padding: 9rem 2rem 2rem;
+	background-color: #B4B4B4;
+	position: fixed;
+	height: 100%;
+}
+.myCal a {
+	font-size: 5rem;
+	border-style: solid;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-bottom: 1rem;
+	text-align: center;
+	color: #747474;
+}
+
+.cal tbody {
+	text-align: center;
+}
+
+.actualCal {
+	margin-left: 28rem;
+}
+
+td, th {
+	border: 1px solid gray;
+}
+
+.propos {
+	text-align: center;
+}
+
+.propos a {
+	font-size: 2rem;
+	color: #C8F0C8;
+}
